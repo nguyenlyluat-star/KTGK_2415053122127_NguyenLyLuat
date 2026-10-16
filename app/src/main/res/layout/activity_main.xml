@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtTenKhoanChi_127"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:hint="Tên khoản chi (ví dụ: Mua sách)" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edtSoTien_127"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Số tiền (VNĐ)" />
+
+    <EditText
+        android:id="@+id/edtGhiChu_127"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ghi chú" />
+
+    <EditText
+        android:id="@+id/edtLoaiChi_127"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loại chi (Ăn uống, Đi lại, Học tập, Khác)" />
+
+    <Button
+        android:id="@+id/btnThemKhoanChi_127"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm khoản chi" />
+
+    <Button
+        android:id="@+id/btnXemChiTiet_127"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem chi tiết khoản chi" />
+</LinearLayout>
